@@ -2,14 +2,15 @@
 
 This is the official repository of these VrDU datasets:
 1. EC-FUNSD, a benchmark of semantic entity recognition (SER) and entity linking (EL), focusing on entity-centric robustness evaluation of pre-trained text-and-layout models [[paper]](https://arxiv.org/abs/2402.02379);
+
+<div align=center>
+<img src="assets/ec.png" title="EC-FUNSD disentangles the falsely coupled annotation of segment and entity that arises from the block-level annotation of FUNSD." width="80%">
+</div>
+
 2. ROOR, a reading order prediction (ROP) benchmark which annotates layout reading order as ordering relations [[paper]](https://arxiv.org/abs/2402.02379).
 
 <div align=center>
-<img src="assets/ec.png" title="EC-FUNSD disentangles the falsely coupled annotation of segment and entity that arises from the block-level annotation of FUNSD.">
-</div>
-
-<div align=center>
-<img src="assets/roor.png" title="ROOR conceptualizes the layout reading order with the term _immediate succession during reading_, and annotates the relationship as a directed acyclic relation over layout elements.">
+<img src="assets/roor.png" title="ROOR conceptualizes the layout reading order with the term _immediate succession during reading_, and annotates the relationship as a directed acyclic relation over layout elements." width="80%">
 </div>
 
 ## Datasets
