@@ -12,6 +12,7 @@ This is the official repository of these VrDU datasets:
 <div align=center>
 <img src="assets/roor.png" title="ROOR conceptualizes the layout reading order with the term _immediate succession during reading_, and annotates the relationship as a directed acyclic relation over layout elements." width="80%">
 </div>
+Please refer to [ROOR](https://github.com/chongzhangFDU/ROOR) for the relevant code implementation.
 
 ## Datasets
 
@@ -75,13 +76,20 @@ One sample annotation is displayed below, in which:
 }
 ```
 
-<!-- The benchmarks are available at Papers With Code. [[FUNSD-r]](https://paperswithcode.com/dataset/funsd-r) [[CORD-r]](https://paperswithcode.com/dataset/cord-r) -->
+[EC-FUNSD](https://paperswithcode.com/dataset/ec-funsd) and [ROOR](https://paperswithcode.com/dataset/roor) are currently available at Papers With Code. 
 
 ## Citation
 
 If you found this repository useful, please cite our paper:
 
 ```
+@article{zhang2024modeling,
+  title={Modeling Layout Reading Order as Ordering Relations for Visually-rich Document Understanding},
+  author={Zhang, Chong and Tu, Yi and Zhao, Yixi and Yuan, Chenshu and Chen, Huan and Zhang, Yue and Chai, Mingxu and Guo, Ya and Zhu, Huijia and Zhang, Qi and others},
+  journal={arXiv preprint arXiv:2409.19672},
+  year={2024}
+}
+
 @article{zhang2024rethinking,
   title={Rethinking the Evaluation of Pre-trained Text-and-Layout Models from an Entity-Centric Perspective},
   author={Zhang, Chong and Zhao, Yixi and Yuan, Chenshu and Tu, Yi and Guo, Ya and Zhang, Qi},
