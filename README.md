@@ -12,6 +12,7 @@ This is the official repository of these VrDU datasets:
 <div align=center>
 <img src="assets/roor.png" title="ROOR conceptualizes the layout reading order with the term _immediate succession during reading_, and annotates the relationship as a directed acyclic relation over layout elements." width="80%">
 </div>
+
 Please refer to [ROOR](https://github.com/chongzhangFDU/ROOR) for the relevant code implementation.
 
 ## Datasets
