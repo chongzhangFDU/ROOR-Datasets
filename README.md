@@ -12,6 +12,7 @@ This is the official repository of these VrDU datasets:
 <div align=center>
 <img src="assets/roor.png" title="ROOR conceptualizes the layout reading order with the term _immediate succession during reading_, and annotates the relationship as a directed acyclic relation over layout elements." width="80%">
 </div>
+
 Please refer to [ROOR](https://github.com/chongzhangFDU/ROOR) for the relevant code implementation.
 
 ## Datasets
@@ -52,7 +53,7 @@ One sample annotation is displayed below, in which:
   * `"entity_id"` identifies the entity. `label` refers to the entity type.
   * `"word_idx"` refers to the word sequence that composes the entity, denoted by a list of word indexes. The indexes are guaranteed to be consecutive. 
 * `"label_linkings"` refers to the corresponding EL annotations. Each element is a linking pair indicating to the `entity_id` of the head and tail entities.
-* `"ro_linkings"` refers to the corresponding RO relation annotations. Each element is a linking pair indicating to the `entity_id` of the head and tail entities.
+* `"ro_linkings"` refers to the corresponding RO relation annotations. Each element is a linking pair indicating to the segment `id` of the head and tail segments.
 
 ```json
 {
