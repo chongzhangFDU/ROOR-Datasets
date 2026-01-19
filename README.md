@@ -1,4 +1,4 @@
-# Modeling Layout Reading Order as Ordering Relations for Visually-rich Document Understanding
+# ROOR-Datasets
 
 This is the official repository of these VrDU datasets:
 1. EC-FUNSD, a benchmark of semantic entity recognition (SER) and entity linking (EL), focusing on entity-centric robustness evaluation of pre-trained text-and-layout models [[paper]](https://arxiv.org/abs/2402.02379);
@@ -7,7 +7,7 @@ This is the official repository of these VrDU datasets:
 <img src="assets/ec.png" title="EC-FUNSD disentangles the falsely coupled annotation of segment and entity that arises from the block-level annotation of FUNSD." width="80%">
 </div>
 
-2. ROOR, a reading order prediction (ROP) benchmark which annotates layout reading order as ordering relations [[paper]](https://arxiv.org/abs/2402.02379).
+2. ROOR, a reading order prediction (ROP) benchmark which annotates layout reading order as ordering relations [[paper]](https://arxiv.org/abs/2409.19672).
 
 <div align=center>
 <img src="assets/roor.png" title="ROOR conceptualizes the layout reading order with the term _immediate succession during reading_, and annotates the relationship as a directed acyclic relation over layout elements." width="80%">
@@ -23,6 +23,7 @@ The structure of the released datasets is listed below, in which:
 * `labels.txt` denote the entity types of the SER task from EC-FUNSD.
 * `images` contain the document images of the samples.
 * `jsons` contain the annotations of the samples. The datasets EC-FUNSD and ROOR share the same layout annotations. Therefore, for each document sample, the layout annotation and the SER and EL annotation from EC-FUNSD and the ROP annotation from ROOR are integrated into one single JSON file. Within the file, the annotations of layout and these three tasks are indicated by distinct keys.
+  * `jsons_*_complex_entity` subdirectories are used to conduct the fairness evaluation in [[paper]](https://arxiv.org/abs/2402.02379). Please replace the original `jsons` directory if needed.
 
 ```
 data
@@ -36,6 +37,8 @@ data
 │   ├── 0000989556.json
 │   ├── ...
 │   └── 93455715.json
+├── (other json files)
+│   └── ...
 ├── data.train.txt
 ├── data.val.txt
 └── labels.txt
@@ -79,6 +82,8 @@ One sample annotation is displayed below, in which:
 
 [EC-FUNSD](https://paperswithcode.com/dataset/ec-funsd) and [ROOR](https://paperswithcode.com/dataset/roor) are currently available at Papers With Code. 
 
+
+
 ## Citation
 
 If you found this repository useful, please cite our paper:
@@ -91,11 +96,14 @@ If you found this repository useful, please cite our paper:
   year={2024}
 }
 
-@article{zhang2024rethinking,
-  title={Rethinking the Evaluation of Pre-trained Text-and-Layout Models from an Entity-Centric Perspective},
-  author={Zhang, Chong and Zhao, Yixi and Yuan, Chenshu and Tu, Yi and Guo, Ya and Zhang, Qi},
-  journal={arXiv preprint arXiv:2402.02379},
-  year={2024}
+@misc{zhang2025unveilingdeficienciespretrainedtextandlayout,
+      title={Unveiling the Deficiencies of Pre-trained Text-and-Layout Models in Real-world Visually-rich Document Information Extraction}, 
+      author={Chong Zhang and Yixi Zhao and Yulu Xie and Chenshu Yuan and Yi Tu and Ya Guo and Mingxu Chai and Ziyu Shen and Yue Zhang and Qi Zhang},
+      year={2025},
+      eprint={2402.02379},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2402.02379}, 
 }
 ```
 
